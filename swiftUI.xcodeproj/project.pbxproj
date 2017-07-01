@@ -49,7 +49,9 @@
 		20F62B0A1F065B02003DE7AF /* swiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIUITests.swift; sourceTree = "<group>"; };
 		20F62B0C1F065B02003DE7AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F62B191F065ED6003DE7AF /* BlurEffectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurEffectsViewController.swift; sourceTree = "<group>"; };
-		20F62B201F076BB7003DE7AF /* ArrayPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ArrayPlayground.playground; sourceTree = "<group>"; };
+		20F62B201F076BB7003DE7AF /* Array.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Array.playground; sourceTree = "<group>"; };
+		20F62B211F078D1B003DE7AF /* Dictionary.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionary.playground; sourceTree = "<group>"; };
+		20F62B221F07A081003DE7AF /* Set.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Set.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +143,9 @@
 		20F62B1F1F076BA6003DE7AF /* playground */ = {
 			isa = PBXGroup;
 			children = (
-				20F62B201F076BB7003DE7AF /* ArrayPlayground.playground */,
+				20F62B201F076BB7003DE7AF /* Array.playground */,
+				20F62B211F078D1B003DE7AF /* Dictionary.playground */,
+				20F62B221F07A081003DE7AF /* Set.playground */,
 			);
 			path = playground;
 			sourceTree = "<group>";
