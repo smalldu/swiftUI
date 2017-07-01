@@ -14,6 +14,7 @@
 		20F62AF51F065B02003DE7AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F62AF31F065B02003DE7AF /* LaunchScreen.storyboard */; };
 		20F62B001F065B02003DE7AF /* swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F62AFF1F065B02003DE7AF /* swiftUITests.swift */; };
 		20F62B0B1F065B02003DE7AF /* swiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F62B0A1F065B02003DE7AF /* swiftUIUITests.swift */; };
+		20F62B1A1F065ED6003DE7AF /* BlurEffectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F62B191F065ED6003DE7AF /* BlurEffectsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		20F62B061F065B02003DE7AF /* swiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F62B0A1F065B02003DE7AF /* swiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIUITests.swift; sourceTree = "<group>"; };
 		20F62B0C1F065B02003DE7AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20F62B191F065ED6003DE7AF /* BlurEffectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurEffectsViewController.swift; sourceTree = "<group>"; };
+		20F62B201F076BB7003DE7AF /* ArrayPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ArrayPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 		20F62AE91F065B02003DE7AF /* swiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				20F62B1F1F076BA6003DE7AF /* playground */,
 				20F62B181F065B66003DE7AF /* basics */,
 				20F62AEA1F065B02003DE7AF /* AppDelegate.swift */,
 				20F62AEC1F065B02003DE7AF /* ViewController.swift */,
@@ -129,8 +133,17 @@
 		20F62B181F065B66003DE7AF /* basics */ = {
 			isa = PBXGroup;
 			children = (
+				20F62B191F065ED6003DE7AF /* BlurEffectsViewController.swift */,
 			);
 			path = basics;
+			sourceTree = "<group>";
+		};
+		20F62B1F1F076BA6003DE7AF /* playground */ = {
+			isa = PBXGroup;
+			children = (
+				20F62B201F076BB7003DE7AF /* ArrayPlayground.playground */,
+			);
+			path = playground;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +285,7 @@
 			files = (
 				20F62AED1F065B02003DE7AF /* ViewController.swift in Sources */,
 				20F62AEB1F065B02003DE7AF /* AppDelegate.swift in Sources */,
+				20F62B1A1F065ED6003DE7AF /* BlurEffectsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KY748RT68A;
 				INFOPLIST_FILE = swiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = im.zuber.app.swiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,6 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KY748RT68A;
 				INFOPLIST_FILE = swiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = im.zuber.app.swiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -524,6 +540,7 @@
 				20F62B111F065B02003DE7AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20F62B121F065B02003DE7AF /* Build configuration list for PBXNativeTarget "swiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +549,7 @@
 				20F62B141F065B02003DE7AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20F62B151F065B02003DE7AF /* Build configuration list for PBXNativeTarget "swiftUIUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +558,7 @@
 				20F62B171F065B02003DE7AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
