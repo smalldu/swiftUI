@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		208BB8DF1F0F8A4C00EAFB59 /* CountingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208BB8DE1F0F8A4C00EAFB59 /* CountingViewController.swift */; };
+		208BB8E21F0F8D6900EAFB59 /* CountdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208BB8E11F0F8D6900EAFB59 /* CountdownButton.swift */; };
+		20937A4F1F0F6BC000174D21 /* FontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20937A4E1F0F6BC000174D21 /* FontsViewController.swift */; };
+		20937A511F0F6E5C00174D21 /* UIFont+basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20937A501F0F6E5C00174D21 /* UIFont+basics.swift */; };
 		20F62AEB1F065B02003DE7AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F62AEA1F065B02003DE7AF /* AppDelegate.swift */; };
 		20F62AED1F065B02003DE7AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F62AEC1F065B02003DE7AF /* ViewController.swift */; };
 		20F62AF01F065B02003DE7AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F62AEE1F065B02003DE7AF /* Main.storyboard */; };
@@ -15,6 +19,9 @@
 		20F62B001F065B02003DE7AF /* swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F62AFF1F065B02003DE7AF /* swiftUITests.swift */; };
 		20F62B0B1F065B02003DE7AF /* swiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F62B0A1F065B02003DE7AF /* swiftUIUITests.swift */; };
 		20F62B1A1F065ED6003DE7AF /* BlurEffectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F62B191F065ED6003DE7AF /* BlurEffectsViewController.swift */; };
+		20F62B3F1F0A49F4003DE7AF /* Array+basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F62B3E1F0A49F4003DE7AF /* Array+basics.swift */; };
+		20F62B411F0A4A21003DE7AF /* Dictionary+basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F62B401F0A4A21003DE7AF /* Dictionary+basics.swift */; };
+		20F62B431F0A4A3B003DE7AF /* Set+basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F62B421F0A4A3B003DE7AF /* Set+basics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		208BB8DE1F0F8A4C00EAFB59 /* CountingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingViewController.swift; sourceTree = "<group>"; };
+		208BB8E11F0F8D6900EAFB59 /* CountdownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownButton.swift; sourceTree = "<group>"; };
+		20937A4E1F0F6BC000174D21 /* FontsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontsViewController.swift; sourceTree = "<group>"; };
+		20937A501F0F6E5C00174D21 /* UIFont+basics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+basics.swift"; sourceTree = "<group>"; };
 		20F62AE71F065B02003DE7AF /* swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F62AEA1F065B02003DE7AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F62AEC1F065B02003DE7AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +63,10 @@
 		20F62B201F076BB7003DE7AF /* Array.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Array.playground; sourceTree = "<group>"; };
 		20F62B211F078D1B003DE7AF /* Dictionary.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionary.playground; sourceTree = "<group>"; };
 		20F62B221F07A081003DE7AF /* Set.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Set.playground; sourceTree = "<group>"; };
+		20F62B3C1F0A49A8003DE7AF /* RangeAndSequence.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RangeAndSequence.playground; sourceTree = "<group>"; };
+		20F62B3E1F0A49F4003DE7AF /* Array+basics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+basics.swift"; sourceTree = "<group>"; };
+		20F62B401F0A4A21003DE7AF /* Dictionary+basics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+basics.swift"; sourceTree = "<group>"; };
+		20F62B421F0A4A3B003DE7AF /* Set+basics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set+basics.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		208BB8E01F0F8D5F00EAFB59 /* basicsView */ = {
+			isa = PBXGroup;
+			children = (
+				208BB8E11F0F8D6900EAFB59 /* CountdownButton.swift */,
+			);
+			path = basicsView;
+			sourceTree = "<group>";
+		};
 		20F62ADE1F065B02003DE7AF = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +125,8 @@
 		20F62AE91F065B02003DE7AF /* swiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				208BB8E01F0F8D5F00EAFB59 /* basicsView */,
+				20F62B3D1F0A49DF003DE7AF /* basicsExt */,
 				20F62B1F1F076BA6003DE7AF /* playground */,
 				20F62B181F065B66003DE7AF /* basics */,
 				20F62AEA1F065B02003DE7AF /* AppDelegate.swift */,
@@ -136,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				20F62B191F065ED6003DE7AF /* BlurEffectsViewController.swift */,
+				20937A4E1F0F6BC000174D21 /* FontsViewController.swift */,
+				208BB8DE1F0F8A4C00EAFB59 /* CountingViewController.swift */,
 			);
 			path = basics;
 			sourceTree = "<group>";
@@ -146,8 +173,20 @@
 				20F62B201F076BB7003DE7AF /* Array.playground */,
 				20F62B211F078D1B003DE7AF /* Dictionary.playground */,
 				20F62B221F07A081003DE7AF /* Set.playground */,
+				20F62B3C1F0A49A8003DE7AF /* RangeAndSequence.playground */,
 			);
 			path = playground;
+			sourceTree = "<group>";
+		};
+		20F62B3D1F0A49DF003DE7AF /* basicsExt */ = {
+			isa = PBXGroup;
+			children = (
+				20F62B3E1F0A49F4003DE7AF /* Array+basics.swift */,
+				20F62B401F0A4A21003DE7AF /* Dictionary+basics.swift */,
+				20F62B421F0A4A3B003DE7AF /* Set+basics.swift */,
+				20937A501F0F6E5C00174D21 /* UIFont+basics.swift */,
+			);
+			path = basicsExt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,9 +326,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				208BB8DF1F0F8A4C00EAFB59 /* CountingViewController.swift in Sources */,
+				208BB8E21F0F8D6900EAFB59 /* CountdownButton.swift in Sources */,
+				20F62B411F0A4A21003DE7AF /* Dictionary+basics.swift in Sources */,
+				20937A4F1F0F6BC000174D21 /* FontsViewController.swift in Sources */,
+				20F62B3F1F0A49F4003DE7AF /* Array+basics.swift in Sources */,
+				20937A511F0F6E5C00174D21 /* UIFont+basics.swift in Sources */,
 				20F62AED1F065B02003DE7AF /* ViewController.swift in Sources */,
 				20F62AEB1F065B02003DE7AF /* AppDelegate.swift in Sources */,
 				20F62B1A1F065ED6003DE7AF /* BlurEffectsViewController.swift in Sources */,
+				20F62B431F0A4A3B003DE7AF /* Set+basics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
