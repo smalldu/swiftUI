@@ -13,7 +13,7 @@
         <!--Navigation Controller-->
         <scene sceneID="kOv-Zb-YxZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u4d-B5-C3R" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u4d-B5-C3R" customClass="SZNavigationController" customModule="swiftUI" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="waw-0Q-4yo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -40,7 +40,7 @@
                             <tableViewSection headerTitle="basics" id="cbH-nv-ILg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="RRM-nh-coA" style="IBUITableViewCellStyleDefault" id="mAa-cj-bQ9">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mAa-cj-bQ9" id="jfg-bk-S5u">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
@@ -60,7 +60,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="ugO-pL-GWd" style="IBUITableViewCellStyleDefault" id="dZG-4o-IPo">
-                                        <rect key="frame" x="0.0" y="100" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dZG-4o-IPo" id="Oen-LN-0zT">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
@@ -80,7 +80,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="zgc-WC-3X9" style="IBUITableViewCellStyleDefault" id="x3v-ki-5bX">
-                                        <rect key="frame" x="0.0" y="144" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="143.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x3v-ki-5bX" id="pDx-ZQ-sMo">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
@@ -99,6 +99,26 @@
                                             <segue destination="tLO-87-1gn" kind="push" id="mvc-PE-4II"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="bjT-RD-ghz" style="IBUITableViewCellStyleDefault" id="LIW-dk-PVP">
+                                        <rect key="frame" x="0.0" y="187.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LIW-dk-PVP" id="lPw-ir-4gR">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Link TextView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bjT-RD-ghz">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="CbX-mb-4QL" kind="push" id="wqr-g2-21E"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -112,6 +132,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1be-ck-1Nt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="815" y="343"/>
+        </scene>
+        <!--Link TextView-->
+        <scene sceneID="017-OU-clL">
+            <objects>
+                <viewController id="CbX-mb-4QL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E2i-oL-Ii5"/>
+                        <viewControllerLayoutGuide type="bottom" id="45L-pJ-chh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tkx-ch-FLw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="测试 连接 http://www.zuber.im   电话 13166667777" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xT-RV-qt5" customClass="LinkableTextView" customModule="swiftUI" customModuleProvider="target">
+                                <rect key="frame" x="22" y="164" width="331" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="XB7-QR-Q7P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3xT-RV-qt5" firstAttribute="top" secondItem="E2i-oL-Ii5" secondAttribute="bottom" constant="100" id="Hco-AB-ajM"/>
+                            <constraint firstAttribute="trailing" secondItem="3xT-RV-qt5" secondAttribute="trailing" constant="22" id="T3F-yO-O9J"/>
+                            <constraint firstItem="3xT-RV-qt5" firstAttribute="leading" secondItem="Tkx-ch-FLw" secondAttribute="leading" constant="22" id="nGN-1u-6PT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Link TextView" id="g2m-Fi-ZhA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zRR-on-PQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1604" y="-765"/>
         </scene>
         <!--Fonts-->
         <scene sceneID="e2Z-Jg-GZh">
@@ -145,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bvd-0h-hXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1604" y="-421"/>
+            <point key="canvasLocation" x="1604" y="-961"/>
         </scene>
         <!--倒计时按钮-->
         <scene sceneID="tKu-Qm-Jsh">
@@ -217,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mj-Wv-eIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1616.8" y="93.103448275862078"/>
+            <point key="canvasLocation" x="1604" y="-859"/>
         </scene>
         <!--Blur Effects View Controller-->
         <scene sceneID="Rsw-o7-hdc">
@@ -247,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SkR-TN-aMl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1604" y="-1058"/>
+            <point key="canvasLocation" x="1604" y="-1055"/>
         </scene>
     </scenes>
     <resources>

@@ -26,8 +26,8 @@ class CountdownButton: UIButton {
   
   var step: Int = 1 // 步长 默认为 1
   var insteadString: String = "%s秒后重新获取"  // 必须包含 ‘%s’
-  fileprivate var currentTime: Int = 0
-  fileprivate var title: String?
+  private var currentTime: Int = 0
+  private var title: String?
   private lazy var countLabel: UILabel = {
     let label = UILabel()
     label.textColor = self.countTextColor

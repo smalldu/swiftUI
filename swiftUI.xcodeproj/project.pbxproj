@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		208BB8DF1F0F8A4C00EAFB59 /* CountingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208BB8DE1F0F8A4C00EAFB59 /* CountingViewController.swift */; };
 		208BB8E21F0F8D6900EAFB59 /* CountdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208BB8E11F0F8D6900EAFB59 /* CountdownButton.swift */; };
+		208BB8E41F10822900EAFB59 /* LinkableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208BB8E31F10822900EAFB59 /* LinkableTextView.swift */; };
+		208BB8E61F10CD3B00EAFB59 /* SZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208BB8E51F10CD3B00EAFB59 /* SZNavigationController.swift */; };
 		20937A4F1F0F6BC000174D21 /* FontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20937A4E1F0F6BC000174D21 /* FontsViewController.swift */; };
 		20937A511F0F6E5C00174D21 /* UIFont+basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20937A501F0F6E5C00174D21 /* UIFont+basics.swift */; };
 		20F62AEB1F065B02003DE7AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F62AEA1F065B02003DE7AF /* AppDelegate.swift */; };
@@ -44,6 +46,9 @@
 /* Begin PBXFileReference section */
 		208BB8DE1F0F8A4C00EAFB59 /* CountingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingViewController.swift; sourceTree = "<group>"; };
 		208BB8E11F0F8D6900EAFB59 /* CountdownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownButton.swift; sourceTree = "<group>"; };
+		208BB8E31F10822900EAFB59 /* LinkableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkableTextView.swift; sourceTree = "<group>"; };
+		208BB8E51F10CD3B00EAFB59 /* SZNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SZNavigationController.swift; sourceTree = "<group>"; };
+		208BB8E71F10D64000EAFB59 /* swiftUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "swiftUI-Bridging-Header.h"; path = "basicsView/swiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
 		20937A4E1F0F6BC000174D21 /* FontsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontsViewController.swift; sourceTree = "<group>"; };
 		20937A501F0F6E5C00174D21 /* UIFont+basics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+basics.swift"; sourceTree = "<group>"; };
 		20F62AE71F065B02003DE7AF /* swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				208BB8E11F0F8D6900EAFB59 /* CountdownButton.swift */,
+				208BB8E31F10822900EAFB59 /* LinkableTextView.swift */,
 			);
 			path = basicsView;
 			sourceTree = "<group>";
@@ -134,6 +140,7 @@
 				20F62AEE1F065B02003DE7AF /* Main.storyboard */,
 				20F62AF11F065B02003DE7AF /* Assets.xcassets */,
 				20F62AF31F065B02003DE7AF /* LaunchScreen.storyboard */,
+				208BB8E71F10D64000EAFB59 /* swiftUI-Bridging-Header.h */,
 				20F62AF61F065B02003DE7AF /* Info.plist */,
 			);
 			path = swiftUI;
@@ -163,6 +170,7 @@
 				20F62B191F065ED6003DE7AF /* BlurEffectsViewController.swift */,
 				20937A4E1F0F6BC000174D21 /* FontsViewController.swift */,
 				208BB8DE1F0F8A4C00EAFB59 /* CountingViewController.swift */,
+				208BB8E51F10CD3B00EAFB59 /* SZNavigationController.swift */,
 			);
 			path = basics;
 			sourceTree = "<group>";
@@ -258,6 +266,7 @@
 					20F62AE61F065B02003DE7AF = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = KY748RT68A;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					20F62AFA1F065B02003DE7AF = {
@@ -330,11 +339,13 @@
 				208BB8E21F0F8D6900EAFB59 /* CountdownButton.swift in Sources */,
 				20F62B411F0A4A21003DE7AF /* Dictionary+basics.swift in Sources */,
 				20937A4F1F0F6BC000174D21 /* FontsViewController.swift in Sources */,
+				208BB8E61F10CD3B00EAFB59 /* SZNavigationController.swift in Sources */,
 				20F62B3F1F0A49F4003DE7AF /* Array+basics.swift in Sources */,
 				20937A511F0F6E5C00174D21 /* UIFont+basics.swift in Sources */,
 				20F62AED1F065B02003DE7AF /* ViewController.swift in Sources */,
 				20F62AEB1F065B02003DE7AF /* AppDelegate.swift in Sources */,
 				20F62B1A1F065ED6003DE7AF /* BlurEffectsViewController.swift in Sources */,
+				208BB8E41F10822900EAFB59 /* LinkableTextView.swift in Sources */,
 				20F62B431F0A4A3B003DE7AF /* Set+basics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,12 +500,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KY748RT68A;
 				INFOPLIST_FILE = swiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = im.zuber.app.swiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftUI/basicsView/swiftUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -503,12 +517,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KY748RT68A;
 				INFOPLIST_FILE = swiftUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = im.zuber.app.swiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftUI/basicsView/swiftUI-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
