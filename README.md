@@ -7,7 +7,7 @@
 
 ## Swift 进阶学习笔记 
 
-> 位于swiftUI/playground目录    Editer -> Show Raw MarkUp  可以查看MarkDown格式
+> 位于swiftUI/playground目录    Editer -> Show Rendered Markup  可以查看MarkDown格式
 
 目前笔记
 
