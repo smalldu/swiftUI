@@ -7,7 +7,7 @@
 
 ## Swift 进阶学习笔记 
 
-> 位于swiftUI/playground目录
+> 位于swiftUI/playground目录    Editer -> Show Raw MarkUp  可以查看MarkDown格式
 
 目前笔记
 
@@ -19,12 +19,12 @@
 
 ## UI
 
+> 运行项目可以查看效果
+
 - Blur Effects
 - UIFont 
 - 封装一个自定义倒计时按钮
 - 自动识别连接、电话等 的`UITextView`
 - 自定义`UINavigationController` pop 和 push , 以及全屏返回
-
-
 
 > 持续更新中 ...
