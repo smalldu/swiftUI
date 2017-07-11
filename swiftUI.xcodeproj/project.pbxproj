@@ -44,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		201E99031F1370BD000FBE13 /* Collection.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Collection.playground; sourceTree = "<group>"; };
 		208BB8DE1F0F8A4C00EAFB59 /* CountingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingViewController.swift; sourceTree = "<group>"; };
 		208BB8E11F0F8D6900EAFB59 /* CountdownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownButton.swift; sourceTree = "<group>"; };
 		208BB8E31F10822900EAFB59 /* LinkableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkableTextView.swift; sourceTree = "<group>"; };
@@ -182,6 +183,7 @@
 				20F62B211F078D1B003DE7AF /* Dictionary.playground */,
 				20F62B221F07A081003DE7AF /* Set.playground */,
 				20F62B3C1F0A49A8003DE7AF /* RangeAndSequence.playground */,
+				201E99031F1370BD000FBE13 /* Collection.playground */,
 			);
 			path = playground;
 			sourceTree = "<group>";
