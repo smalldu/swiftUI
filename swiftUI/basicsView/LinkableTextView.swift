@@ -31,7 +31,6 @@ class LinkableTextView: UITextView , UITextViewDelegate {
     delegate = self
     dataDetectorTypes = .all
     linkTextAttributes = [ NSForegroundColorAttributeName:UIColor.red ]
-    text = "测试连接 https://www.baidu.com 自动识别 13100203949 以及 021-98929384"
   }
   
   func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange) -> Bool {

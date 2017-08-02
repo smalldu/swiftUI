@@ -8,33 +8,45 @@
 
 import UIKit
 
-class CountdownButton: UIButton {
+public class CountdownButton: UIButton {
   typealias Task = (_ cancel : Bool) -> ()
   var task:Task?
   
-  var countTextColor: UIColor = UIColor.lightGray {
+  public var countTextColor: UIColor = UIColor.lightGray {
     didSet{
       countLabel.textColor = countTextColor
     }
   }
-  var totalTimes:Int = 60   // 总数 倒计时用
+  public var countFont: UIFont = UIFont.pingFangSC(ofSize: 14){
+    didSet{
+      countLabel.font = countFont
+    }
+  }
+  public var totalTimes:Int = 60   // 总数 倒计时用
   {
     didSet{
       currentTime = totalTimes
     }
   }
   
-  var step: Int = 1 // 步长 默认为 1
-  var insteadString: String = "%s秒后重新获取"  // 必须包含 ‘%s’
+  public var step: Int = 1 // 步长 默认为 1
+  public var insteadString: String = "%s秒后重新获取"  // 必须包含 ‘%s’
+  
   private var currentTime: Int = 0
-  private var title: String?
+  public var attributeText: NSMutableAttributedString? {
+    didSet{
+      self.setAttributedTitle(attributeText, for: .normal)
+    }
+  }
   private lazy var countLabel: UILabel = {
     let label = UILabel()
     label.textColor = self.countTextColor
-    label.font = self.titleLabel?.font
+    label.font = self.countFont
     label.textAlignment = .center
     return label
   }()
+  
+  private var countDidStop: ((Void)->Void)?
   
   
   override init(frame: CGRect) {
@@ -42,35 +54,42 @@ class CountdownButton: UIButton {
     prepareView()
   }
   
-  required init?(coder aDecoder: NSCoder) {
+  required public init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     prepareView()
   }
   
-  override func layoutSubviews() {
+  override public func layoutSubviews() {
     super.layoutSubviews()
     countLabel.frame = bounds
   }
   
   // 布局
   func prepareView(){
+    self.titleLabel?.text = ""
+    self.setTitle("", for: .normal)
     currentTime = totalTimes
     countLabel.text = insteadString.replacingOccurrences(of: "%s", with: "\(self.currentTime)")
-    title = self.titleLabel?.text
     addSubview(countLabel)
     countLabel.isHidden = true
   }
   
-  func start(){
-    setTitle("", for: .normal)
+  public func start(){
+    
+    self.setAttributedTitle(NSMutableAttributedString(), for: .normal)
     countLabel.text = insteadString.replacingOccurrences(of: "%s", with: "\(self.currentTime)")
     countLabel.isHidden = false
     countingTask()
   }
   
+  public func handleCountDidStop(countDidStop: ((Void)->Void)?){
+    self.countDidStop = countDidStop
+  }
+  
   
   private func countingTask(){
     // 每一秒 执行一次
+    self.cancel(self.task)
     self.task = delay(1, task: { [weak self] in
       guard let strongSelf = self else{ return }
       strongSelf.currentTime -= 1
@@ -87,12 +106,14 @@ class CountdownButton: UIButton {
   }
   
   
-  func stop() {
+  public func stop() {
     self.cancel(self.task)
-    
-    setTitle(self.title ?? "", for: .normal)
+    if let attributeText = attributeText {
+      self.setAttributedTitle(attributeText, for: .normal)
+    }
     countLabel.isHidden = true
     currentTime = totalTimes
+    self.countDidStop?()
   }
   
   

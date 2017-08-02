@@ -121,6 +121,30 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="CUSTOM" id="CBl-bO-8eg">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="qZI-RI-69o" style="IBUITableViewCellStyleDefault" id="xKF-rH-Umn">
+                                        <rect key="frame" x="0.0" y="270.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xKF-rH-Umn" id="g2I-O5-Cxg">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Youtobe 导航和菜单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qZI-RI-69o">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="F3i-tr-xEC" kind="show" id="04F-s7-UOK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="zbQ-UW-Hcs" id="vpv-7E-TEe"/>
@@ -131,7 +155,26 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1be-ck-1Nt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815" y="343"/>
+            <point key="canvasLocation" x="836" y="748"/>
+        </scene>
+        <!--Youtobe LikeVC-->
+        <scene sceneID="fLH-RF-Wmc">
+            <objects>
+                <viewController id="phP-eb-yYM" customClass="YoutobeLikeVC" customModule="swiftUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6X5-67-j32"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ffu-Da-L4r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h6k-Qa-a2o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aW6-NF-FLS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSr-mw-X5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604" y="679.61019490254876"/>
         </scene>
         <!--Link TextView-->
         <scene sceneID="017-OU-clL">
@@ -166,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRR-on-PQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1604" y="-765"/>
+            <point key="canvasLocation" x="2370" y="-1102"/>
         </scene>
         <!--Fonts-->
         <scene sceneID="e2Z-Jg-GZh">
@@ -200,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bvd-0h-hXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1604" y="-961"/>
+            <point key="canvasLocation" x="300" y="-1102"/>
         </scene>
         <!--倒计时按钮-->
         <scene sceneID="tKu-Qm-Jsh">
@@ -272,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mj-Wv-eIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1604" y="-859"/>
+            <point key="canvasLocation" x="975" y="-1102"/>
         </scene>
         <!--Blur Effects View Controller-->
         <scene sceneID="Rsw-o7-hdc">
@@ -302,7 +345,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SkR-TN-aMl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1604" y="-1055"/>
+            <point key="canvasLocation" x="1665" y="-1102"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1vH-2J-ei6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F3i-tr-xEC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9id-Y9-DSy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="phP-eb-yYM" kind="relationship" relationship="rootViewController" id="iCh-83-Ji5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4c2-Z0-xZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664.8" y="679.61019490254876"/>
         </scene>
     </scenes>
     <resources>

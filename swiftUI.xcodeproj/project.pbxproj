@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206FBA9B1F31E1CE00E0EC72 /* YoutobeLikeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206FBA9A1F31E1CE00E0EC72 /* YoutobeLikeVC.swift */; };
 		208BB8DF1F0F8A4C00EAFB59 /* CountingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208BB8DE1F0F8A4C00EAFB59 /* CountingViewController.swift */; };
 		208BB8E21F0F8D6900EAFB59 /* CountdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208BB8E11F0F8D6900EAFB59 /* CountdownButton.swift */; };
 		208BB8E41F10822900EAFB59 /* LinkableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208BB8E31F10822900EAFB59 /* LinkableTextView.swift */; };
@@ -44,7 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20146B061F2328D800517B96 /* jm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = jm.playground; sourceTree = "<group>"; };
 		201E99031F1370BD000FBE13 /* Collection.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Collection.playground; sourceTree = "<group>"; };
+		206FBA9A1F31E1CE00E0EC72 /* YoutobeLikeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutobeLikeVC.swift; sourceTree = "<group>"; };
 		208BB8DE1F0F8A4C00EAFB59 /* CountingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingViewController.swift; sourceTree = "<group>"; };
 		208BB8E11F0F8D6900EAFB59 /* CountdownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownButton.swift; sourceTree = "<group>"; };
 		208BB8E31F10822900EAFB59 /* LinkableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkableTextView.swift; sourceTree = "<group>"; };
@@ -100,12 +103,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		208BB8E01F0F8D5F00EAFB59 /* basicsView */ = {
+		208BB8E01F0F8D5F00EAFB59 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				208BB8E11F0F8D6900EAFB59 /* CountdownButton.swift */,
 				208BB8E31F10822900EAFB59 /* LinkableTextView.swift */,
 			);
+			name = Views;
 			path = basicsView;
 			sourceTree = "<group>";
 		};
@@ -132,10 +136,10 @@
 		20F62AE91F065B02003DE7AF /* swiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				208BB8E01F0F8D5F00EAFB59 /* basicsView */,
+				208BB8E01F0F8D5F00EAFB59 /* Views */,
 				20F62B3D1F0A49DF003DE7AF /* basicsExt */,
 				20F62B1F1F076BA6003DE7AF /* playground */,
-				20F62B181F065B66003DE7AF /* basics */,
+				20F62B181F065B66003DE7AF /* ViewControllers */,
 				20F62AEA1F065B02003DE7AF /* AppDelegate.swift */,
 				20F62AEC1F065B02003DE7AF /* ViewController.swift */,
 				20F62AEE1F065B02003DE7AF /* Main.storyboard */,
@@ -165,14 +169,16 @@
 			path = swiftUIUITests;
 			sourceTree = "<group>";
 		};
-		20F62B181F065B66003DE7AF /* basics */ = {
+		20F62B181F065B66003DE7AF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				20F62B191F065ED6003DE7AF /* BlurEffectsViewController.swift */,
 				20937A4E1F0F6BC000174D21 /* FontsViewController.swift */,
 				208BB8DE1F0F8A4C00EAFB59 /* CountingViewController.swift */,
 				208BB8E51F10CD3B00EAFB59 /* SZNavigationController.swift */,
+				206FBA9A1F31E1CE00E0EC72 /* YoutobeLikeVC.swift */,
 			);
+			name = ViewControllers;
 			path = basics;
 			sourceTree = "<group>";
 		};
@@ -184,6 +190,7 @@
 				20F62B221F07A081003DE7AF /* Set.playground */,
 				20F62B3C1F0A49A8003DE7AF /* RangeAndSequence.playground */,
 				201E99031F1370BD000FBE13 /* Collection.playground */,
+				20146B061F2328D800517B96 /* jm.playground */,
 			);
 			path = playground;
 			sourceTree = "<group>";
@@ -342,6 +349,7 @@
 				20F62B411F0A4A21003DE7AF /* Dictionary+basics.swift in Sources */,
 				20937A4F1F0F6BC000174D21 /* FontsViewController.swift in Sources */,
 				208BB8E61F10CD3B00EAFB59 /* SZNavigationController.swift in Sources */,
+				206FBA9B1F31E1CE00E0EC72 /* YoutobeLikeVC.swift in Sources */,
 				20F62B3F1F0A49F4003DE7AF /* Array+basics.swift in Sources */,
 				20937A511F0F6E5C00174D21 /* UIFont+basics.swift in Sources */,
 				20F62AED1F065B02003DE7AF /* ViewController.swift in Sources */,
